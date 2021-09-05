@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-success: #198754;
+	--clr-gray-100: #f8f9fa;
+	--clr-gray-400: #ced4da;
+	--clr-gray-600: #6c757d;
+	--clr-gray-900: #212529;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--clr-gray-900);
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	cursor: pointer;
+}

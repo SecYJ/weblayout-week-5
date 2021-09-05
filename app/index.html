@@ -1,0 +1,217 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="flex-grow pl-8 pr-8">
+	<div class="content h-full">
+		<div class="content-header flex justify-between pt-8 pb-8">
+			<div class="flex">
+				<h2 class="title text-lg font-bold mr-12">Assignment</h2>
+				<select
+					name="courses"
+					class="select font-bold leading-normal border-0"
+				>
+					<option value="all courses">All Courses</option>
+				</select>
+			</div>
+			<div class="flex">
+				<a href="#" class="text-gray-900 mr-6">
+					<span class="material-icons-outlined"> search </span>
+				</a>
+				<a href="#" class="text-gray-900">
+					<span class="material-icons-outlined">
+						notifications_active
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="content-title flex justify-between">
+			<select name="todo" class="select border-0 font-bold mb-1">
+				<option value="dropdown">All (4)</option>
+			</select>
+			<p class="text-gray-600 text-xs">2 comments</p>
+		</div>
+		<ul class="content-sidebar mr-4">
+			<li>
+				<a href="#" class="text-gray-900 content-sidebar-list p-3">
+					<div class="flex justify-between items-center">
+						<p class="text-xs">Chapter Assignment 2</p>
+						<p class="text-xs">4 hrs ago</p>
+					</div>
+					<div class="flex justify-between items-center">
+						<p class="font-bold">Please check this file…</p>
+						<p class="text-gray-600 text-xs">Emily Wang</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="text-gray-900 content-sidebar-list p-3">
+					<div class="flex justify-between items-center">
+						<p class="text-xs">Chapter Assignment 1</p>
+						<p class="text-xs">12 hrs ago</p>
+					</div>
+					<div class="flex justify-between items-center">
+						<p class="font-bold">My Homework</p>
+						<p class="text-gray-600 text-xs">David Xu</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="text-gray-900 content-sidebar-list p-3">
+					<div class="flex justify-between items-center">
+						<p class="text-xs">Final Assignment</p>
+						<p class="text-xs">18 hrs ago</p>
+					</div>
+					<div class="flex justify-between items-center">
+						<p class="font-bold">Have a problem with this…</p>
+						<p class="text-gray-600 text-xs">Tony Wei</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="text-gray-900 content-sidebar-list p-3">
+					<div class="flex justify-between items-center">
+						<p class="text-xs">Final Assignment</p>
+						<p class="text-xs">19 hrs ago</p>
+					</div>
+					<div class="flex justify-between items-center">
+						<p class="font-bold">Did I do it right?</p>
+						<p class="text-gray-600 text-xs">Christina Lin</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="content-chat flex flex-col pb-8">
+			<div class="border border-gray-400">
+				<div
+					class="
+						flex
+						justify-between
+						items-center
+						pt-3
+						pb-3
+						pl-4
+						pr-4
+					"
+				>
+					<div>
+						<div class="text-xs mb-1">
+							Chapter Assignment 2 / HTML&CSS
+						</div>
+						<div class="font-bold">
+							Please check this file for me, thanks!
+						</div>
+					</div>
+					<a href="#">
+						<span class="material-icons-outlined"> more_vert </span>
+					</a>
+				</div>
+			</div>
+			<div
+				class="
+					content-chat-history
+					border border-gray-400
+					pt-4
+					pl-8
+					pr-8
+				"
+			>
+				<div class="flex">
+					<img
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg"
+						alt="Emily Wang"
+						class="user-avatar mr-2"
+					/>
+					<div class="border-bottom border-gray-400">
+						<h3 class="font-bold mb-1">Emily Wang</h3>
+						<div class="text-gray-600 text-xs mb-4">
+							10:38 AM (4 hours ago)
+						</div>
+						<p class="text-sm mb-4">
+							Hi Teacher, the attached file is my homework of
+							chapter 2. And here comes a question: Why in the
+							following code the height of the div is bigger than
+							the height of the img ? There is a gap below the
+							image, but it doesn’t seems to be a padding/margin.
+							<br />
+							What is the gap or extra space below image?
+						</p>
+						<button
+							type="button"
+							class="flex items-center mb-4 pt-2 pb-2 pl-3 pr-3"
+						>
+							<span class="material-icons-outlined mr-2">
+								attach_file
+							</span>
+							HW-2-David.zip
+						</button>
+					</div>
+				</div>
+				<div class="flex pt-4">
+					<img
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
+						alt="Andy Chen"
+						class="user-avatar mr-2"
+					/>
+					<div>
+						<h3 class="font-bold mb-1">Andy Chen</h3>
+						<div class="text-gray-600 text-xs mb-4">
+							13:24 AM (1 hours ago)
+						</div>
+						<p class="text-sm">
+							Hi David, by default, an image is rendered inline,
+							like a letter so it sits on the same line that a, b,
+							c and d sit on. There is space below that line for
+							the descenders you find on letters like g, j, p and
+							q.
+						</p>
+						<p class="text-sm mt-8 mb-8">You can:</p>
+						<ul class="ml-4">
+							<li>
+								• adjust the
+								<span class="font-roboto text-success"
+									>vertical-align</span
+								>
+								of the image to position it elsewhere (e.g. the
+								<span class="font-roboto text-success"
+									>middle</span
+								>
+								) or
+							</li>
+							<li>
+								• change the
+								<span class="font-roboto text-success"
+									>display</span
+								>
+								so it isn’t inline.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-between items-center mt-auto">
+				<div class="flex">
+					<a href="#">
+						<span class="material-icons-outlined">
+							chevron_left
+						</span>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined">
+							chevron_right
+						</span>
+					</a>
+				</div>
+				<div>
+					<button type="button" class="btn btn-outline-success mr-4">
+						Mark as read
+					</button>
+					<button type="button" class="btn btn-success">Reply</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
